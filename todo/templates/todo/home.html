@@ -1,0 +1,17 @@
+{% extends "todo/base.html" %}
+{% load static %}
+{% block content %}
+<br>
+     <h1 class="text-center" style="font-family: comfortaa;"><i>Notez vos tâches, organisez votre vie.</i></h1>
+     <br/>
+     <div class="text-center">
+        <img src="{% static 'images/agenda.png' %}" width="300" height="300">
+    </div>
+     <br/>
+     <br/>
+     <div class="text-center">
+        <a role="button" class="btn btn-primary btn-lg" href="{% url 'signupuser' %}">Commencer</a>
+    </div>
+    
+
+{% endblock %}
